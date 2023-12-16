@@ -1,0 +1,100 @@
+♦ What is non-persistant data storage?
+
+► ChatGPT
+Non-persistent data storage refers to a type of storage that does not retain data after the system is powered down or restarted. In other words, any information stored in non-persistent storage is temporary and will be lost when the power is turned off or the system is rebooted.
+This is in contrast to persistent data storage, where data is retained even when the power is turned off. Common examples of non-persistent storage include RAM (Random Access Memory) in a computer, cache memory, and other volatile storage devices. These types of storage are used to temporarily hold data that is actively being used by the system but is not meant to be stored permanently.
+Non-persistent storage is typically faster than persistent storage, but it is not suitable for long-term storage of data that needs to be preserved across power cycles. Persistent storage, such as hard drives, solid-state drives (SSDs), and optical discs, is designed for long-term data retention.
+
+-------------------------------------------------------------------------
+
+♦ Differentiate between node-persist and an array?
+
+► ChatGPT
+node-persist and an array are two different concepts related to data storage and manipulation in the context of JavaScript or Node.js development.
+
+• node-persist:
+node-persist is not a standalone concept; rather, it is a specific module or library in Node.js used for persistent data storage. 
+It allows you to store and retrieve data persistently across different runs of your Node.js application.
+This module is often used for simple key-value storage in a file-based system, providing a convenient way to store and retrieve data between sessions.
+It is particularly useful for scenarios where you need to maintain some state or configuration information across multiple executions of your Node.js program.
+
+• Array:
+An array is a fundamental data structure in JavaScript (and many other programming languages). It is a collection of elements, each identified by an index or a key.
+Arrays can be used to store and organize data in memory during the runtime of a program. They are versatile and can hold various data types, 
+including numbers, strings, objects, and other arrays.
+Unlike node-persist, arrays are typically used for in-memory storage and are not designed for persistent storage across application runs.
+In summary, node-persist is a library for persistent storage, often used for saving and loading data between runs of a Node.js application, 
+while an array is a basic data structure used for in-memory storage during the runtime of a program. 
+They serve different purposes, with node-persist focusing on data persistence and arrays focusing on in-memory data organization.
+
+-----------------------------------------------------------------------------------------------------------------
+
+♦ How many API a server may have?
+
+► ChatGPT
+The number of APIs (Application Programming Interfaces) a server may have is not fixed and can vary widely depending on the design and purpose of the server. 
+In general, a server can have multiple APIs, 
+each serving a specific function or providing access to different sets of functionalities.
+APIs are used to enable communication and data exchange between different software systems. 
+Servers often expose APIs to allow clients (such as web applications, mobile apps, or other servers) to interact with and consume their services. 
+The number of APIs a server has depends on the complexity of the system it supports and the features it offers.
+
+For example, a server handling a social media platform may have APIs for user authentication, posting updates, retrieving user data, and more. Similarly, 
+a cloud service might provide APIs for managing virtual machines, storage, and networking.
+There is no strict limit to the number of APIs a server can have, and it ultimately depends on the requirements and architecture of the system being developed.
+
+
+♦ Could you explain it further with an example?
+
+► ChatGPT
+Certainly! Let's consider a hypothetical e-commerce platform as an example. The platform has a server that manages various aspects of the e-commerce business, and it exposes several APIs to facilitate interactions with different components of the system.
+
+• Product API:
+
+Purpose: Manages information about products available on the platform.
+Functionality: Allows clients to retrieve a list of products, get details about a specific product, and update product information.
+json
+Copy code
+GET /api/products            // Get a list of all products
+GET /api/products/{id}       // Get details of a specific product
+PUT /api/products/{id}       // Update product information
+
+• User API:
+
+Purpose: Manages user-related functionalities such as registration and authentication.
+Functionality: Allows clients to create a new user account, log in, and retrieve user details.
+json
+Copy code
+POST /api/users              // Create a new user account
+POST /api/users/login        // Log in and obtain authentication token
+GET /api/users/{id}          // Get user details
+
+• Order API:
+
+Purpose: Handles the creation and management of orders.
+Functionality: Allows clients to place orders, view order history, and track the status of an order.
+json
+Copy code
+POST /api/orders             // Place a new order
+GET /api/orders/{id}         // Get details of a specific order
+GET /api/orders/user/{userId}// Get order history for a specific user
+
+• Payment API:
+
+Purpose: Manages payment processing for orders.
+Functionality: Allows clients to make payments and retrieve payment details.
+json
+Copy code
+POST /api/payments           // Process a payment for an order
+GET /api/payments/{id}       // Get details of a specific payment
+
+In this example, the server exposes different APIs to handle distinct functionalities such as product management, 
+user-related operations, order processing, and payments. Each API has its own set of endpoints that clients can call to perform specific actions.
+
+The number and complexity of APIs can vary based on the requirements of the e-commerce platform. 
+This modular approach allows for better organization, maintenance, and scalability of the overall system.
+
+
+
+
+
