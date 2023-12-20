@@ -31,6 +31,11 @@ Ans: React DevTools is a browser extension or standalone tool that allows develo
 8 Profiling Performance:
 React DevTools includes a profiler that allows developers to analyze the performance of their React application. It helps identify performance bottlenecks and understand the rendering times of components.
 
+• functional programming:
+Calling a function and then passing a function instead of values and this may continue at multiple levels. 
+For ex: 
+• .map() method of array which takes a function as the argument.
+
 
 
 
