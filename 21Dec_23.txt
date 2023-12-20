@@ -1,0 +1,21 @@
+♦ Prop-drilling
+Que: What is prop drilling?
+
+Ans: Prop drilling is a term used in the context of React, a popular JavaScript library for building user interfaces. It refers to the practice of passing data down from 
+a parent component to a deeply nested child component through a series of intermediary components in the component tree. The term "prop" is short for "property," and 
+it refers to the data that is passed from one component to another.
+
+In a React application, data typically flows from parent components to child components through props. Props are a way for a parent component to pass information or configuration to 
+its child components. Prop drilling occurs when a piece of data needs to be passed through multiple levels of components in order to reach a deeply nested component that requires that data.
+
+While prop drilling can work, it has some drawbacks. It can make the code more complex, as each intermediate component in the hierarchy needs to accept and pass down the props even if 
+they don't use the data themselves. Additionally, changes to the component hierarchy or the need to pass new data to a deeply nested component can require modifications to multiple components.
+
+To address the challenges of prop drilling, developers often use other state management solutions in React, such as context API, Redux, or other state management libraries. 
+These solutions provide a centralized way to manage and share state across components without the need for prop drilling.
+
+
+
+
+
+
