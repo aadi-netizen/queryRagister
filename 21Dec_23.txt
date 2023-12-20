@@ -14,6 +14,23 @@ they don't use the data themselves. Additionally, changes to the component hiera
 To address the challenges of prop drilling, developers often use other state management solutions in React, such as context API, Redux, or other state management libraries. 
 These solutions provide a centralized way to manage and share state across components without the need for prop drilling.
 
+♦ React_dev_tool: 
+Que: What does react dev tool do?
+
+Ans: React DevTools is a browser extension or standalone tool that allows developers to inspect and debug React applications more efficiently. It provides a set of features specifically designed for working with React applications. Here are some of the key functionalities of React DevTools:
+1. Component Tree Inspection:
+2. Props and State Inspection:
+3. Component Highlighting:
+4. Component Updates: 
+   React DevTools provides information about when a component re-renders and why it re-renders. This can be crucial for optimizing performance and identifying unnecessary renders.
+5. Time-Travel Debugging: 
+  Some versions of React DevTools support time-travel debugging, allowing developers to inspect the state and props of components at different points in time.
+6. Hooks Inspection: state and effect hooks
+7 Redux Integration:
+ Provides a unified debugging experience for both React components and Redux state.
+8 Profiling Performance:
+React DevTools includes a profiler that allows developers to analyze the performance of their React application. It helps identify performance bottlenecks and understand the rendering times of components.
+
 
 
 
